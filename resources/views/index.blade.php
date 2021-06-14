@@ -1,44 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
+    
+@extends('layout.template')
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bali Nusa Group</title>
-    <link href="asset/image/icon.svg" rel='shortcut icon'>
-    <link rel="stylesheet" href="{{asset('bootstrap/css/bootstrap.css')}}">
-    <link rel="stylesheet" href="{{asset('bootstrap/css/style.css')}}">
-</head>
-
-<body>
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="{{asset('image/logo putih.svg')}}" width="200 px" alt="">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <div class="mx-auto"></div>
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="me-5 nav-link text-white" href="#">Home</a>
-                    </li>
-                    <li class="me-5 nav-item">
-                        <a class="nav-link text-white" href="#">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <div class="poition-absolute">
+@section('content')
+<div class="poition-absolute">
         <div id="carouselExampleSlidesOnly" class="my-carou caroucarousel slide" data-bs-ride="carousel">
             <div class="my-carou carousel-inner">
                 <div class="carousel-item active">
@@ -53,47 +17,58 @@
             </div>
         </div>
         <div class="container position-absolute top-50 start-50 translate-middle">
-            <div class="row row-cols-1 row-cols-md-4 g-5">
+            <div class="row row-cols-1 row-cols-md-5 g-5">
                 <div class="col grow">
-                    <a href="https://www.instagram.com/digitalphotographics" class="text-decoration-none text-dark">
+                    <a href="https://www.instagram.com/nusaphoto/" class="text-decoration-none text-dark">
                         <div class="shadow card my-card kiri show-on-scroll">
-                            <img src="{{asset('image/photo.jpg')}}" class="card-img-top zoom" alt="...">
+                            <img src="{{asset('image/nusa-photo-bali.jpg')}}" class="card-img-top zoom" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title text-center">Nusa Photo</h5>
-                                <p class="card-text text-center">This is a longer card with supporting text</p>
+                                <p class="card-text text-center">Abadikan momen spesial<br> anda bersama kami</p>
                             </div>
                         </div>
                     </a>
                 </div>
                 <div class="col grow">
-                    <a href="https://www.instagram.com/digitalphotographics" class="text-decoration-none text-dark">
+                    <a href="https://www.instagram.com/nusagiftbali/" class="text-decoration-none text-dark">
                         <div class="shadow card my-card bawah show-on-scroll">
-                            <img src="{{asset('image/gift.jpg')}}" class="card-img-top" alt="...">
+                            <img src="{{asset('image/nusa-gift-bali.jpg')}}" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title text-center">Nusa Gift</h5>
-                                <p class="card-text text-center">This is a longer card with supporting text</p>
+                                <p class="card-text text-center">Buat kenangan<br>yang tak terlupakan</p>
                             </div>
                         </div>
                     </a>
                 </div>
                 <div class="col grow">
-                    <a href="https://www.instagram.com/digitalphotographics" class="text-decoration-none text-dark">
+                    <a href="https://www.instagram.com/nusaprintbali/" class="text-decoration-none text-dark">
                         <div class="shadow card my-card bawah show-on-scroll">
-                            <img src="{{asset('image/print.jpg')}}" class="card-img-top" alt="...">
+                            <img src="{{asset('image/jasa-printing-bali.jpg')}}" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title text-center">Nusa Print</h5>
-                                <p class="card-text text-center">This is a longer card with supporting text</p>
+                                <p class="card-text text-center">Advertising, Digital Printing, & Offset Printing</p>
                             </div>
                         </div>
                     </a>
                 </div>
                 <div class="col grow">
-                    <a href="https://www.instagram.com/digitalphotographics" class="text-decoration-none text-dark">
+                    <a href="https://www.instagram.com/nusapratamaprinting.reklame/" class="text-decoration-none text-dark">
                         <div class="shadow card my-card kanan show-on-scroll">
-                            <img src="{{asset('image/pack.jpg')}}" class="card-img-top" alt="...">
+                            <img src="{{asset('image/jasa-reklame-bali.jpg')}}" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title text-center">Nusa Packaging</h5>
-                                <p class="card-text text-center">This is a longer card with supporting text</p>
+                                <h5 class="card-title text-center">Nusa Pratama</h5>
+                                <p class="card-text text-center">Photo Neonbox <br> & Billboard</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col grow">
+                    <a href="https://www.instagram.com/nusaweblab/" class="text-decoration-none text-dark">
+                        <div class="shadow card my-card kanan show-on-scroll">
+                            <img src="{{asset('image/jasa-website-bali.jpg')}}" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Nusaweblab</h5>
+                                <p class="card-text text-center">Desain & Pengembangan Website</p>
                             </div>
                         </div>
                     </a>
@@ -104,9 +79,5 @@
             Copyright © 2021 nusabaligroup.com - All Rights
             Reserved</p>
     </div>
-    <script src="{{asset('bootstrap/js/show-on-scroll.js')}}"></script>
-    <script src="https://kit.fontawesome.com/a6c813d4c0.js" crossorigin="anonymous"></script>
-    <script src="{{asset('bootstrap/js/bootstrap.js')}}"></script>
-</body>
-
-</html>
+@endsection
+    

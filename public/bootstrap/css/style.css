@@ -6,6 +6,22 @@ body{
   background-color: none !important;
 }
 
+.my-active li a{
+  border-bottom: 0px solid rgb(230, 104, 0);
+}
+
+.my-active li a:hover{
+  border-bottom: 1px solid rgb(230, 104, 0);
+}
+
+.my-active li a:hover{
+  border-bottom: 1px solid rgb(230, 104, 0);
+}
+
+.my-active li a.active{
+  border-bottom: 1px solid rgb(230, 104, 0);
+}
+
 .my-carou{
     width: 100% !important;
 }
